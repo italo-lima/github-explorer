@@ -1,0 +1,127 @@
+import styled from 'styled-components';
+
+export const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #a8a8b3;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #666;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+`;
+
+export const RepositoryInfo = styled.section`
+  margin-top: 80px;
+
+  header {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    div {
+      margin-left: 25px;
+
+      strong {
+        font-size: 35px;
+        color: #3d3d4d;
+      }
+
+      p {
+        font-size: 20px;
+        color: #737380;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+
+    li {
+      & + li {
+        margin-left: 80px;
+      }
+
+      strong {
+        display: block;
+        font-size: 35px;
+        color: #3d3d4d;
+      }
+
+      span {
+        display: block;
+        margin-top: 5px;
+        color: #6c6c80;
+      }
+    }
+  }
+`;
+
+export const Issues = styled.div`
+  margin-top: 80px;
+
+  a {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+
+    & + a {
+      margin-top: 15px;
+    }
+
+    div {
+      margin: 0 15px;
+      flex: 1;
+
+      strong {
+        font-size: 20px;
+        color: #3d3d4d;
+      }
+
+      p {
+        font-size: 18px;
+        color: #a8a8b3;
+        margin-top: 5px;
+      }
+    }
+
+    svg {
+      margin-left: auto;
+      color: #cbcbd6;
+    }
+  }
+`;
+
+export const Error = styled.span`
+  display: block;
+  color: #c53030;
+  margin-top: 10px;
+`;
