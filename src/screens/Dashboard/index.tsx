@@ -1,7 +1,3 @@
-// React.FC -> tipagem do component (function component)
-// event: FormEvent<HTMLFormElement> -> para conseguir utilizar o preventDefault, HTMLFormElement representa o elemento
-// do html e FormEvent o evento de submit
-
 import React, { useState, FormEvent, useEffect } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
